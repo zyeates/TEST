@@ -1,0 +1,27 @@
+<h1 id ="display"></h1>
+
+<input type="text" id="text">
+<button id = "submit"> Submit </button>  
+
+
+<script>
+
+array = []
+
+var submit = document.getElementById("submit")
+
+submit.addEventListener("click", arraybuild)
+
+    function arraybuild() {
+
+        var text = document.getElementById("text").value
+
+        var display = document.getElementById("display")
+
+        array.push(text)
+
+        display.innerHTML = ("Array:" + array)
+    }
+
+
+</script>
